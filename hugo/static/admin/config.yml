@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway # git-gateway if using Netlify Identity integration
+  repo:  labickj/hugo-blaupause
+  branch: master
+  # base_url: # See https://github.com/vencax/netlify-cms-github-oauth-provider or remove if using Netlify Identity
+publish_mode: editorial_workflow
+media_folder: "hugo/static/assets"
+public_folder: "/assets"
+collections: # See netlify-cms docs
+  - name: "page"
+    label: "Page"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }

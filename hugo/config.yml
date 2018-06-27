@@ -1,12 +1,12 @@
 ---
 # Site
-baseurl: "https://blaupause.felics.me"
-title: "Blaupause"
+baseurl: "https://hugo-blaupause.netlify.com/"
+title: "jiulog-hugo"
 enableRobotsTXT: true
 googleAnalytics: ""
 # Content
-languageCode: "en-us"
-defaultContentLanguage: "en"
+languageCode: "ko-kr"
+defaultContentLanguage: "ko"
 # Formats
 metaDataFormat: "yaml"
 # -----------------------------
